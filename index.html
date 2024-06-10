@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Web App</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" placeholder="0" name="show">
+                </div>
+                <div class="buttons">
+                    <input type="button" value="AC" class="gray-color" onclick="show.value = '' ">
+                    <input type="button" value="DE" class="gray-color"
+                        onclick="show.value = show.value.toString().slice(0,-1)">
+                    <input type="button" value="%" class="gray-color" onclick="show.value += '%' ">
+                    <input type="button" value="/" class="orange-color" onclick="show.value += '/' ">
+                </div>
+                <div class="buttons">
+                    <input type="button" value="7" class="light-color" onclick="show.value += '7' ">
+                    <input type="button" value="8" class="light-color" onclick="show.value += '8' ">
+                    <input type="button" value="9" class="light-color" onclick="show.value += '9' ">
+                    <input type="button" value="*" class="orange-color" onclick="show.value += '*' ">
+                </div>
+                <div class="buttons">
+                    <input type="button" value="4" class="light-color" onclick="show.value += '4' ">
+                    <input type="button" value="5" class="light-color" onclick="show.value += '5' ">
+                    <input type="button" value="6" class="light-color" onclick="show.value += '6' ">
+                    <input type="button" value="-" class="orange-color" onclick="show.value += '-' ">
+                </div>
+                <div class="buttons">
+                    <input type="button" value="1" class="light-color" onclick="show.value += '1' ">
+                    <input type="button" value="2" class="light-color" onclick="show.value += '2' ">
+                    <input type="button" value="3" class="light-color" onclick="show.value += '3' ">
+                    <input type="button" value="+" class="orange-color" onclick="show.value += '+' ">
+                </div>
+                <div class="buttons">
+                    <input type="button" value="0" class="light-color" onclick="show.value += '0' ">
+                    <input type="button" value="." class="light-color" onclick="show.value += '.' ">
+                    <input type="button" value="=" class="equal" onclick="show.value = eval(show.value)">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
