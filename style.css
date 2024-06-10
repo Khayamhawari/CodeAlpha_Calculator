@@ -84,7 +84,6 @@ form input.light-color {
 @media screen and (max-width:479px) {
     .container {
         background-color: var(--Black);
-        align-items: end;
-        padding-bottom: 25px;
+        padding-bottom: 5px;
     }
 }
