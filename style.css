@@ -84,5 +84,15 @@ form input.light-color {
 @media screen and (max-width:479px) {
     .container {
         background-color: var(--Black);
+        overflow: hidden;
+    }
+
+    .calculator {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
     }
 }
