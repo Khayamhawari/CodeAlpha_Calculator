@@ -6,4 +6,4 @@
 - JavaScript
 
 ## Hosted URL
-- 
+- https://htmlcalculatorforyou.netlify.app/
